@@ -1,0 +1,24 @@
+name: MockApp
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+configs:
+  Debug: debug
+  Release: release
+targets:
+  MockApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: MockApp
+    info:
+      path: MockApp/Info.plist
+      properties:
+        CFBundleDisplayName: MockApp
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.mockapp
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
